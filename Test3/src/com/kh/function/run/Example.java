@@ -84,7 +84,7 @@ public class Example {
 		
 		System.out.print("성별 (M/W) : ");
 		stGD = kc.next().charAt(0);
-		stGD = (stGD != 'M' ? stGD = '남' : '여');
+		stGD = (stGD != 'M' ? stGD = '여' : '');
 		
 		System.out.print("성적(소수점 둘째 자리까지) : ");
 		stR = kc.nextDouble();
