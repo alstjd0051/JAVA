@@ -9,7 +9,7 @@ public class JFrameTest2 extends JFrame{
 		setTitle("두번쨰 프레임");
 //		setSize(300,200);
 //		setLocation(200,200);
-		setBounds(200,200,300,200);//10번과 11번줄을 한거번에
+		setBounds(200,200,300,200);//10번과 11번줄을 한거번에 (가로위치,세로위치,가로길이,세로길이)
 		
 		//리사이즈 방지
 		setResizable(false);

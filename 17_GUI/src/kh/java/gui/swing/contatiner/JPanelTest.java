@@ -14,7 +14,7 @@ public class JPanelTest extends JFrame {
 	public JPanelTest() {
 		setSize(800,500); //위치
 		setLocationRelativeTo(null); //가운데 정렬
-		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); //프로그램종료시 종료
 		
 		//JFrame의 기본 LayoutManager객체는  BorderLayout(기본값)이다.
 //		setLayout(new BorderLayout());

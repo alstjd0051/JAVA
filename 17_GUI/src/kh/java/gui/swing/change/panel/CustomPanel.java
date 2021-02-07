@@ -12,14 +12,13 @@ import javax.swing.JPanel;
 
 import kh.java.gui.util.MyUtil;
 
-public class CustomPanel extends JPanel{
-
+public class CustomPanel extends JPanel {
+	
 	private JFrame parent;
 	
-	
 	public CustomPanel(JFrame parent, Color c, String title) {
-		this.parent = parent; // 부모객체에 접근하기위해 미리 필드로 지정
-		
+		this.parent = parent;//부모객체에 접근하기 위해 미리 필드로 지정
+	
 		setBackground(c);
 		setLayout(new BorderLayout());
 		add(new JLabel(title), BorderLayout.NORTH);
@@ -37,18 +36,18 @@ public class CustomPanel extends JPanel{
 		ActionListener listener = new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				int index = Integer.parseInt(((JButton)e.getSource()).getText()); //e.getSource = object ->JButton String
+				int index = Integer.parseInt(((JButton)e.getSource()).getText());
 				System.out.println(index);
 				JPanel nextPanel = MainFrame.panels[index];
-				MyUtil.changePanel(parent, this, CustomPanel.this,nextPanel);
-				
+				MyUtil.changePanel(parent, CustomPanel.this, nextPanel);
 			}
 		};
-		
 		
 		btn0.addActionListener(listener);
 		btn1.addActionListener(listener);
 		btn2.addActionListener(listener);
+		
+		
 	}
 
 }

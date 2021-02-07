@@ -29,6 +29,7 @@ public class JFrameTest1 {
 		f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		
 		//자식 컴포넌트 : 컨테이너에 포함된 컴포넌트.
+//		Label label = new JLable("Hello Fxxker");
 		f.add(new JLabel("Hello Fxker"));
 		
 		//시각화처리(맨 마지막에 작성)

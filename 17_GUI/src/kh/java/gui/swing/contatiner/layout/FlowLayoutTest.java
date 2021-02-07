@@ -15,12 +15,12 @@ public class FlowLayoutTest extends JFrame {
 		// JPanel의 기본 Layout객체
 		JPanel panel = new JPanel();
 		// 정렬기준 제시 (LEFT, RIGHT, CENTER)
-		panel.setLayout(new FlowLayout(FlowLayout.LEFT)); 
-		
+		panel.setLayout(new FlowLayout(FlowLayout.LEFT));
+
 		for (int i = 0; i < 15; i++) {
 			panel.add(new JButton((i + 1) + "번"));
 		}
-		
+
 		add(panel);
 //		setSize(500, 500);
 //		setLocationRelativeTo(null);

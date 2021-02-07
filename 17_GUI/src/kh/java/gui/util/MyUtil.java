@@ -1,7 +1,5 @@
 package kh.java.gui.util;
 
-import java.awt.event.ActionListener;
-
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 
@@ -16,12 +14,13 @@ public class MyUtil {
 		f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 	}
 
-	public static void changePanel(JFrame parent, ActionListener actionListener, CustomPanel current, JPanel next) {
-		parent.remove(current);
-		parent.add(next);
+	public static void changePanel(JFrame parent, CustomPanel current, JPanel next) {
+		 parent.remove(current);
+		 parent.add(next);
+		 
+		 parent.revalidate();//container하위 계층구조를 새로고침
+		 parent.repaint();//화면 다시 그리기
 		
-		parent.revalidate(); //컨테이너 하위의계층구조를 새로고침
-		parent.repaint(); //화면다시 그리기
 	}
 
 }

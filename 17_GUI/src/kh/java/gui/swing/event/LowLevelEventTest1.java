@@ -31,23 +31,23 @@ import kh.java.gui.util.MyUtil;
 public class LowLevelEventTest1 extends JFrame {
 
 	public LowLevelEventTest1(int w, int h, String title) {
-		MyUtil.init(this, w, h, title);
+		MyUtil.init(this, １７９２, ８２８, title);
 
 		JPanel panel = new JPanel();
 		JLabel label = new JLabel("패널");
 		panel.add(label);
-		
-		//컴포넌트에 이벤트핸들러 객체 바인딩
+
+		// 컴포넌트에 이벤트핸들러 객체 바인딩
 		MyMouseListener listener = new MyMouseListener();
-//		panel.addMouseListener(listener);
+		panel.addMouseListener(listener);
 //		panel.addMouseWheelListener(listener);
-//		panel.addMouseMotionListener(listener);
-		
-		panel.addMouseListener(new MyMouseListener2()); //MymouseListener2클래스
+		panel.addMouseMotionListener(listener);
+
+		panel.addMouseListener(new MyMouseListener2()); // MymouseListener2클래스
 
 		add(panel);
 	}
-	
+
 	public class MyMouseListener2 extends MouseAdapter {
 		@Override
 		public void mouseClicked(MouseEvent e) {
@@ -90,12 +90,12 @@ public class LowLevelEventTest1 extends JFrame {
 		@Override
 		public void mouseDragged(MouseEvent e) {
 			System.out.println("mouseDragged");
-			
+
 		}
 
 		@Override
 		public void mouseMoved(MouseEvent e) {
-			System.out.println(e.getX()+"mouseMove!"+e.getY());
+			System.out.println(e.getX() + "mouseMove!" + e.getY());
 		}
 
 	}

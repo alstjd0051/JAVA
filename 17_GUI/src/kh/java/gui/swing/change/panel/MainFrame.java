@@ -11,7 +11,7 @@ public class MainFrame extends JFrame{
 	
 	
 	public MainFrame(int w, int h, String title) {
-		MyUtil.init(this, w, h, title);
+		MyUtil.init(this, 1000, 600, title);
 		
 		//panels 객체 할당.
 		panels[0] = new CustomPanel(this, Color.pink, "panel0");

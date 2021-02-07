@@ -16,7 +16,7 @@ public class BorderLayoutTest extends JFrame {
 		
 		//JFrame객체의 기본layout은 BorderLayout이다.
 		
-		JPanel north = new BorderPanel("북", new Color(200,80,60));
+		JPanel north = new BorderPanel("북", new Color(200,80,60));//R,G,B
 		JPanel south = new BorderPanel("남", new Color(100,40,60));
 		JPanel east = new BorderPanel("동", new Color(100,80,60));
 		JPanel west = new BorderPanel("서", new Color(10,80,60));
@@ -43,7 +43,7 @@ public class BorderLayoutTest extends JFrame {
 			add(label); //현재 JPanel객체에 추가
 		}
 	}
-	
+
 	
 	public static void main(String[] args) {
 

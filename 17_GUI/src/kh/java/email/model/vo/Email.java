@@ -4,7 +4,21 @@ import java.io.Serializable;
 
 public class Email implements Serializable {
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private String email;
+
+	public Email() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
+	public Email(String email) {
+		super();
+		this.email = email;
+	}
 
 	public String getEmail() {
 		return email;
@@ -14,15 +28,11 @@ public class Email implements Serializable {
 		this.email = email;
 	}
 
-	public Email(String s) {
-		super();
-		// TODO Auto-generated constructor stub
-	}
-
 	@Override
 	public String toString() {
 		return "Email [email=" + email + "]";
 	}
+	
 	
 	
 }
